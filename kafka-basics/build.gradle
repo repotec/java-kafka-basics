@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'org.kafka'
+version '01-snapshot'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.apache.kafka', name: 'kafka-clients', version: '3.2.0'
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7.36'
+    implementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.36'
+}
+
+test {
+    useJUnitPlatform()
+}

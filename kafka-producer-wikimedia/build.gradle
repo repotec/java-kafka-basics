@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'com.kafka'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.apache.kafka', name: 'kafka-clients', version: '3.2.0'
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7.36'
+    implementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.36'
+    implementation group: 'com.squareup.okhttp3', name: 'okhttp', version: '4.10.0'
+    implementation group: 'com.launchdarkly', name: 'okhttp-eventsource', version: '2.5.0'
+
+}
+
+test {
+    useJUnitPlatform()
+}
